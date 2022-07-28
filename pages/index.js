@@ -25,7 +25,7 @@ export default function Home() {
         <section className='header'>
           <div className='header__logo'>
             <div className='logo__image'>
-              <img src="/logo2.png" alt="logo" />
+              <img src="/logo.png" alt="logo" />
             </div>
           </div>
           <div className='header__items'>
