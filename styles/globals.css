@@ -48,6 +48,11 @@ img {
 .headerFull {
   background-color: var(--azul);
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .header {
@@ -69,7 +74,24 @@ img {
 }
 
 .navbar {
-  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1;
+  background-color: var(--azul);
+  max-height: 0;
+  overflow: hidden;
+  transition-property: max-height;
+  transition: 0.6s ease-in-out;
+}
+
+.navbar.on {
+  max-height: 1000px;
 }
 
 .navbar a {
@@ -84,7 +106,9 @@ img {
 
 @media (min-width: 768px) {
   .navbar {
+    position: static;
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
   }
@@ -104,6 +128,7 @@ img {
 .inicio {
   background-color: var(--amarilloClaro);
   padding-bottom: 2rem;
+  margin-top: 80px;
 }
 
 .inicio__imagen--container {

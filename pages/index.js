@@ -1,8 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [cart, setCart] = useState('')
+  const [visibleCart, setVisibleCart] = useState(false)
+  const handleVisibleCart = () => {
+    setVisibleCart(!visibleCart)
+  }
+
+  const handleClickLink = () => {
+    setVisibleCart(false)
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -19,14 +29,14 @@ export default function Home() {
             </div>
           </div>
           <div className='header__items'>
-            <nav className='navbar'>
-              <a href="#">Inicio</a>
-              <a href="#">Servicios</a>
-              <a href="#">Material</a>
-              <a href="#">Contacto</a>
+            <nav className={`navbar ${visibleCart ? "on" : ""}`}>
+              <a onClick={handleClickLink} href="#">Inicio</a>
+              <a onClick={handleClickLink} href="#">Servicios</a>
+              <a onClick={handleClickLink} href="#">Material</a>
+              <a onClick={handleClickLink} href="#">Contacto</a>
             </nav>
             <i className='bx bxs-cart'></i>
-            <i className='bx bx-menu'></i>
+            <i onClick={handleVisibleCart} className='bx bx-menu'></i>
           </div>
         </section>
       </header>
