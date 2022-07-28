@@ -65,7 +65,13 @@ img {
 }
 
 .header__logo {
-  width: 160px;  
+  width: 200px;
+}
+
+.logo__image {
+  border-top-left-radius: 40px;
+  border-end-end-radius: 40px;
+  overflow: hidden;
 }
 
 .header__items {
@@ -110,6 +116,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    max-height: 500px;
     align-items: center;
   }
 
@@ -129,6 +136,10 @@ img {
   background-color: var(--amarilloClaro);
   padding-bottom: 2rem;
   margin-top: 80px;
+}
+
+.inicio h2 {
+  text-align: center;
 }
 
 .inicio__imagen--container {
