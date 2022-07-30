@@ -30,22 +30,6 @@ export default function Home() {
               <h1>Andrea Bohorquez Navarro</h1>
             </section>
           </div>
-          <h2>¿Qué hace un terapeuta ocupacional en la escuela?</h2>
-          <p className='inicio__textoPrincipal'>
-          El rol ocupacional del niño centra sus actividades en la escuela, es por esto que un 
-          terapeuta ocupacional en dicho entorno es un profesional que puede apoyar las adaptaciones 
-          razonables del currículo que el profesor del aula realiza a través del PIAR, para aquellos 
-          niños que lo requieran, de modo que, además de asistir a la clase, también alcancen su máximo 
-          nivel de participación, inclusión y rendimiento en las actividades del aula. 
-          El terapeuta ocupacional será una parte vital del equipo que trabaja con los niños que tienen 
-          necesidades educativas especiales y requieren apoyo adicional para lograr mejores resultados 
-          en la escuela, ya que se encargará de identificar la base de las dificultades de cada 
-          niño a nivel de neurodesarrollo y desarrollo sensoriomotor determinando el impacto en lo 
-          relacionado con el movimiento, la postura, la comunicación y el aprendizaje, corrigiendo y 
-          previniendo la aparición de mayores dificultades que puedan generarse; lo hará través de observaciones 
-          y razonamientos clínicos; proporcionando recomendaciones al profesor encargado para que pueda aplicarlas 
-          en el aula.
-          </p>
         </section>
         <main>
           {/* <Image layout="responsive" width={500} height={700} src={"/colors2.jpeg"} alt="Prueba"/> */}
