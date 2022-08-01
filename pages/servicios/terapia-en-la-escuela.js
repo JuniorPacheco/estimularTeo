@@ -12,8 +12,8 @@ const TerapiaEnLaEscuela = () => {
                     <i className='bx bxs-school' ></i>
                     <h1>Terapia Ocupacional en la escuela</h1>
                 </section>
-                <section className='principal'>
-                    <img src="/escuela.jpg" alt="niños en la escuela" />
+                <section className='principal imagenEscuela'>
+                    <img src="/escuela.webp" alt="niños en la escuela" />
                     <p>El rol ocupacional del niño centra sus actividades en la escuela, es por esto que un terapeuta ocupacional en dicho entorno es un profesional que puede apoyar las adaptaciones razonables del currículo que el profesor del aula realiza a través del PIAR, para aquellos niños con necesidades educativas especiales que requieran apoyo en su movilidad, adaptaciones al entorno o a los materiales de trabajo; de modo que el niño alcance su máximo nivel de participación, inclusión y rendimiento en las actividades del aula. </p>
                     <h2>Tareas del Terapeuta ocupacional en la escuela</h2>
                     <p>

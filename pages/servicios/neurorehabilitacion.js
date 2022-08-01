@@ -12,7 +12,7 @@ const Neurorehabilitacion = () => {
                     <i className='bx bxs-brain'></i>
                     <h1>Terapia Ocupacional en la Neurorehabilitación</h1>
                 </section>
-                <section className='principal'>
+                <section className='principal imagenNeurorehabilitacion'>
                     <img src="/neurorehabilitacion.jpg" alt="Personas adultas sonriendo" />
                     <p>La disfunción física es una condición resultado de una serie de consecuencias que se producen por diferentes traumas y/o enfermedades como enfermedad cerebro vascular, síndrome de sobre uso, trauma raquimedular, o en cualquier parte del cuerpo, Parkinson, amputación, entre otros. Todas estas influyen en la persona produciendo disfunción física; viendo  disminuidas sus capacidades físicas para llevar a cabo las diferentes actividades, ocupaciones y rutinas de su vida. </p>
                     <h2>Beneficios Terapia Ocupacional en neuro- rehabilitacion</h2>

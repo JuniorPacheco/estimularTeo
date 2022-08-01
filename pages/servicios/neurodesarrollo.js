@@ -15,7 +15,7 @@ const NeuroDesarrollo = () => {
                 <section className='principal'>
                     <img src="/neurodesarrollo.jpg" alt="niños en la escuela" />
                     <p>La intervención se enfoca en apoyar al niño que presenta limitación en sus habilidades motoras, como capacidad reducida para moverse, dificultad para hacer cambios de postura, marcha, correr, saltar, dependencia en las actividades de la vida diaria, dificultad para participar en actividades escolares, etc. Esta basada en el análisis detallado de las actividades funcionales, las limitaciones, capacidades y necesidades, utilizando el análisis del movimiento típico para identificar los componentes atípicos.</p>
-                    <h2>Beneficios de la intervención de terapia ocupacional desde el enfoque de neurodesarrollo </h2>
+                    <h2 style={{marginTop: '2rem'}}>Beneficios de la intervención de terapia ocupacional desde el enfoque de neurodesarrollo </h2>
                     <p>
                     -Reducir el impacto de las deficiencias, aumentar el nivel de participación y autonomía.<br/><br/>
                     -Enfatizar en actividades funcionales impactando directamente en la higiene, vestido, alimentación, juego y traslado, ya que es importante que el niño lo refuerce diariamente.<br/><br/>
