@@ -380,3 +380,52 @@ footer img {
 .redesSociales a:hover {
   color: var(--negro);
 }
+
+/* Seccion escuela */
+
+.entrada {
+  padding: 0 1rem;
+}
+
+.cabezera {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cabezera h1 {
+  font-size: 1.6rem;
+}
+
+.entrada__container {
+  padding: calc(80px + 1rem) 0 80px 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.principal {
+  position: relative;
+}
+
+.principal p {
+  white-space: pre-line;
+  line-height: 1.3;
+}
+
+.principal img {
+  border-radius: 4px;
+  max-width: min(400px, 100%);
+  float: left;
+  margin: 1rem;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 608px) {
+    .principal img {
+      max-width: 100%;
+    }
+}
