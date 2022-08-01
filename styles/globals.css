@@ -111,6 +111,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    transition: none;
     max-height: 500px;
     align-items: center;
   }
@@ -398,6 +399,7 @@ footer img {
 
 .cabezera h1 {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 .entrada__container {
@@ -425,7 +427,15 @@ footer img {
 }
 
 @media (max-width: 608px) {
+    .principal {
+      text-align: center;
+    }
+
+    .principal p {
+      text-align: left;
+    }
+
     .principal img {
-      max-width: 100%;
+      float: none;
     }
 }

@@ -10,7 +10,7 @@ const TerapiaEnLaEscuela = () => {
             <div className='entrada__container'>
                 <section className='cabezera'>
                     <i className='bx bxs-school' ></i>
-                    <p>Terapia Ocupacional en la escuela</p>
+                    <h1>Terapia Ocupacional en la escuela</h1>
                 </section>
                 <section className='principal'>
                     <img src="/escuela.jpg" alt="niños en la escuela" />

@@ -10,7 +10,7 @@ const IntegracionSensorial = () => {
             <div className='entrada__container'>
                 <section className='cabezera'>
                     <i className='bx bx-pulse' ></i>
-                    <p>Terapia Ocupacional en la Integración Sensorial</p>
+                    <h1>Terapia Ocupacional en la Integración Sensorial</h1>
                 </section>
                 <section className='principal'>
                     <img src="/integracionSensorial.jpg" alt="niño con riendo con la el cuerpo pintado" />

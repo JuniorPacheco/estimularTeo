@@ -10,7 +10,7 @@ const Neurorehabilitacion = () => {
             <div className='entrada__container'>
                 <section className='cabezera'>
                     <i className='bx bxs-brain'></i>
-                    <p>Terapia Ocupacional en la Neurorehabilitación</p>
+                    <h1>Terapia Ocupacional en la Neurorehabilitación</h1>
                 </section>
                 <section className='principal'>
                     <img src="/neurorehabilitacion.jpg" alt="Personas adultas sonriendo" />

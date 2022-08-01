@@ -10,7 +10,7 @@ const NeuroDesarrollo = () => {
             <div className='entrada__container'>
                 <section className='cabezera'>
                     <i className='bx bx-brain' ></i>
-                    <p>Terapia Ocupacional en el Neurodesarrollo</p>
+                    <h1>Terapia Ocupacional en el Neurodesarrollo</h1>
                 </section>
                 <section className='principal'>
                     <img src="/neurodesarrollo.jpg" alt="niños en la escuela" />
