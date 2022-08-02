@@ -76,7 +76,7 @@ img {
 
 .navbar {
   position: absolute;
-  top: 80px;
+  top: calc(80px);
   left: 0;
   right: 0;
   display: flex;
@@ -88,10 +88,11 @@ img {
   max-height: 0;
   overflow: hidden;
   transition-property: max-height;
-  transition: 0.6s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar.on {
+  padding: 1rem;
   max-height: 1000px;
 }
 
@@ -105,6 +106,16 @@ img {
   color: var(--negro);
 }
 
+.bxs-cart,
+.bx-menu {
+  cursor: pointer;
+}
+
+.bxs-cart:hover,
+.bx-menu:hover {
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .navbar {
     position: static;
@@ -112,7 +123,7 @@ img {
     flex-direction: row;
     gap: 1rem;
     transition: none;
-    max-height: 500px;
+    max-height: none;
     align-items: center;
   }
 
@@ -251,7 +262,7 @@ img {
 
 .servicios {
   background-color: var(--azulClaro);
-  padding: 4rem 1rem 2rem 1rem;
+  padding: calc(80px + 3rem) 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -448,4 +459,89 @@ footer img {
       max-width: 100%;
       float: none;
     }
+}
+
+/* Materiales */
+
+.materiales {
+  padding: 5rem 1rem 1rem 1rem;
+}
+
+.materiales__container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.materiales__container h1 {
+  text-align: center;
+}
+
+.materiales__products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Materiales - Productos Card */
+
+.productos__entrada {
+  width: calc(200px);
+  padding: 10px;
+  box-shadow: 0px 1px 12px var(--azul);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.productos__entrada:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.productos__entrada h4,
+.productos__entrada p {
+  margin: 0;
+  margin: 0.2rem 0;
+  padding: 0.1rem 0;
+  border-radius: 4px;
+}
+
+.productos__entrada p:last-of-type {
+  font-weight: bold;
+}
+
+.productos__entrada h4:hover {
+  background-color: var(--moradoClaro);
+}
+
+.productos__entrada > p:first-of-type:hover {
+  background-color: var(--azulClaro);
+}
+
+.productos__entrada > p:last-of-type:hover {
+  background-color: var(--verdeClaro);
+}
+
+.productos__entrada 
+
+.productos__entrada img {
+  max-width: 100%;
+}
+
+.productos__entrada-edad {
+  position: absolute;
+  top: 1px;
+  color: white;
+  width: 52px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  right: 1px;
+  background-color: var(--azul);
+  border-radius: 47% 53% 59% 41% / 30% 72% 28% 70% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,310 @@
+const data = [
+    {   
+        id:1,
+        nombre: "Animales Domesticos",
+        descripcion: "8 fichas en cartón 14cm x 10cm",
+        precio: 20000,
+        imagen: "/productimages/1.png",
+        meses: 6,
+        etiqueta: "+ 6 meses"
+    },
+    {   
+        id:2,
+        nombre: "Medios de Transporte",
+        descripcion: "8 fichas en cartón 14cm x 10cm",
+        precio: 20000,
+        imagen: "/productimages/2.png",
+        meses: 6,
+        etiqueta: "+ 6 meses"
+    },
+    {   
+        id:3,
+        nombre: "Frutas",
+        descripcion: "8 fichas en cartón 14cm x 10cm",
+        precio: 20000,
+        imagen: "/productimages/3.png",
+        meses: 6,
+        etiqueta: "+ 6 meses"
+    },
+    {   
+        id:4,
+        nombre: "Animales domésticos y salvajes",
+        descripcion: "20 flash cards 14cm x 10cm",
+        precio: 26000,
+        imagen: "/productimages/4.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:5,
+        nombre: "Animales acuáticos",
+        descripcion: "20 flash cards 14cm x 10cm",
+        precio: 26000,
+        imagen: "/productimages/5.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:6,
+        nombre: "Animales domésticos, salvajes y acuáticos",
+        descripcion: "40 flash cards 14cm x 10cm",
+        precio: 44000,
+        imagen: "/productimages/6.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:7,
+        nombre: "Medios de Transporte",
+        descripcion: "20 flash cards 14cm x 10cm",
+        precio: 26000,
+        imagen: "/productimages/7.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:8,
+        nombre: "Alimentos",
+        descripcion: "20 flash cards 14cm x 10cm",
+        precio: 26000,
+        imagen: "/productimages/8.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:9,
+        nombre: "Profesiones",
+        descripcion: "16 flash cards 14cm x 10cm",
+        precio: 26000,
+        imagen: "/productimages/9.png",
+        meses: 12,
+        etiqueta: "+ 1 año"
+    },
+    {   
+        id:10,
+        nombre: "Combo mediano de lenguaje",
+        descripcion: "50 flash cards 9cm x 10cm",
+        precio: 38000,
+        imagen: "/productimages/10.png",
+        meses: 18,
+        etiqueta: "+ 18 meses"
+    },
+    {   
+        id:11,
+        nombre: "Combo de lenguaje",
+        descripcion: "36 flash cards 9cm x 10cm y 36 dichas de nombres",
+        precio: 37000,
+        imagen: "/productimages/11.png",
+        meses: 18,
+        etiqueta: "+ 18 meses"
+    },
+    {   
+        id:12,
+        nombre: "Crea historias con iman",
+        descripcion: "80 fichas 5cm x 5cm",
+        precio: 40000,
+        imagen: "/productimages/12.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:13,
+        nombre: "Loterias con iman - vocales",
+        descripcion: "5 tableros con iman",
+        precio: 37000,
+        imagen: "/productimages/13.png",
+        meses: 36,
+        etiqueta: "+ 3 años"
+    },
+    {   
+        id:14,
+        nombre: "Tablero con iman",
+        descripcion: "20 acitividades 8 refuerzo positivo",
+        precio: 38000,
+        imagen: "/productimages/14.png",
+        meses: 36,
+        etiqueta: "+ 3 años"
+    },
+    {   
+        id:15,
+        nombre: "Loterias con iman",
+        descripcion: "6 tableros",
+        precio: 38000,
+        imagen: "/productimages/15.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:19,
+        nombre: "Loterias con iman",
+        descripcion: "12 tableros",
+        precio: 62000,
+        imagen: "/productimages/15.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:16,
+        nombre: "Opuestos",
+        descripcion: "20 flash cards 14cm x 10cm",
+        precio: 24000,
+        imagen: "/productimages/16.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:17,
+        nombre: "Partes del cuerpo y emociones",
+        descripcion: "8 flash cards 14cm x 10cm, 9 fichas 9cm x 10cm y 10 fichas 5cm x 5cm",
+        precio: 22000,
+        imagen: "/productimages/17.png",
+        meses: 18,
+        etiqueta: "+ 18 meses"
+    },
+    {   
+        id:18,
+        nombre: "Colores",
+        descripcion: "10 flash cards 14cm x 10cm, 40 fichas 3cm x 3cm",
+        precio: 22000,
+        imagen: "/productimages/18.png",
+        meses: 18,
+        etiqueta: "+ 18 meses"
+    },
+    {   
+        id:20,
+        nombre: "Domino didactico",
+        descripcion: "Fichas en cartón c/u",
+        precio: 28000,
+        imagen: "/productimages/20.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:21,
+        nombre: "Percepción visual",
+        descripcion: "8 flash cards 14cm x 10cm + palitos de madera",
+        precio: 20000,
+        imagen: "/productimages/21.png",
+        meses: 36,
+        etiqueta: "+ 3 años"
+    },
+    {   
+        id:22,
+        nombre: "Percepción visual",
+        descripcion: "8 flash cards 14cm x 10cm + cubos de madera",
+        precio: 26000,
+        imagen: "/productimages/22.png",
+        meses: 48,
+        etiqueta: "+ 4 años"
+    },
+    {   
+        id:23,
+        nombre: "Figuas geometricas",
+        descripcion: "21 flash cards 9cm x 10cm",
+        precio: 22000,
+        imagen: "/productimages/23.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:24,
+        nombre: "Vocales",
+        descripcion: "10 flash cards 14cm x 10cm + 30 fichas 5cm x 5cm",
+        precio: 25000,
+        imagen: "/productimages/24.png",
+        meses: 36,
+        etiqueta: "+ 3 años"
+    },
+    {   
+        id:25,
+        nombre: "Abecedario - Imprenta",
+        descripcion: "33 flash cards 14cm x 10cm + letras sueltas para armar cada palabra",
+        precio: 38000,
+        imagen: "/productimages/25.png",
+        meses: 48,
+        etiqueta: "+ 4 años"
+    },
+    {   
+        id:26,
+        nombre: "Abecedario - Cursiva",
+        descripcion: "31 flash cards 14cm x 10cm",
+        precio: 38000,
+        imagen: "/productimages/26.png",
+        meses: 48,
+        etiqueta: "+ 4 años"
+    },
+    {   
+        id:27,
+        nombre: "Silabario + trabadas e inversas",
+        descripcion: "55 flash cards 9cm x 10cm",
+        precio: 38000,
+        imagen: "/productimages/27.png",
+        meses: 60,
+        etiqueta: "+ 5 años"
+    },
+    {   
+        id:28,
+        nombre: "Silabario",
+        descripcion: "160 fichas 5cm x 5cm",
+        precio: 34000,
+        imagen: "/productimages/28.png",
+        meses: 60,
+        etiqueta: "+ 5 años"
+    },
+    {   
+        id:29,
+        nombre: "Reconocimiento de fonemas",
+        descripcion: "22 flash cards 14cm x 10cm",
+        precio: 24000,
+        imagen: "/productimages/29.png",
+        meses: 60,
+        etiqueta: "+ 5 años"
+    },
+    {   
+        id:30,
+        nombre: "Lectura - Pictogramas",
+        descripcion: "120 fichas 5cm x 5cm",
+        precio: 24000,
+        imagen: "/productimages/30.png",
+        meses: 60,
+        etiqueta: "+ 5 años"
+    },
+    {   
+        id:35,
+        nombre: "Lectura - Pictogramas",
+        descripcion: "240 fichas 5cm x 5cm",
+        precio: 44000,
+        imagen: "/productimages/30.png",
+        meses: 60,
+        etiqueta: "+ 5 años"
+    },
+    {   
+        id:31,
+        nombre: "Números",
+        descripcion: "12 flash cards 14cm x 10cm",
+        precio: 22000,
+        imagen: "/productimages/31.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:32,
+        nombre: "Cantidades",
+        descripcion: "10 flash cards 14cm x 10cm",
+        precio: 18000,
+        imagen: "/productimages/32.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+    {   
+        id:33,
+        nombre: "Combo números",
+        descripcion: "22 flash cards 14cm x 10cm",
+        precio: 32000,
+        imagen: "/productimages/33.png",
+        meses: 24,
+        etiqueta: "+ 2 años"
+    },
+]
+
+export default data
