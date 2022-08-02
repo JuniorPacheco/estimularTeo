@@ -301,7 +301,7 @@ const data = [
         nombre: "Combo números",
         descripcion: "22 flash cards 14cm x 10cm",
         precio: 32000,
-        imagen: "/productimages/33.png",
+        imagen: "/images/33.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
