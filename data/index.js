@@ -4,7 +4,7 @@ const data = [
         nombre: "Animales Domesticos",
         descripcion: "8 fichas en cartón 14cm x 10cm",
         precio: 20000,
-        imagen: "/productimages/1.png",
+        imagen: "/images/1.png",
         meses: 6,
         etiqueta: "+ 6 meses"
     },
@@ -13,7 +13,7 @@ const data = [
         nombre: "Medios de Transporte",
         descripcion: "8 fichas en cartón 14cm x 10cm",
         precio: 20000,
-        imagen: "/productimages/2.png",
+        imagen: "/images/2.png",
         meses: 6,
         etiqueta: "+ 6 meses"
     },
@@ -22,7 +22,7 @@ const data = [
         nombre: "Frutas",
         descripcion: "8 fichas en cartón 14cm x 10cm",
         precio: 20000,
-        imagen: "/productimages/3.png",
+        imagen: "/images/3.png",
         meses: 6,
         etiqueta: "+ 6 meses"
     },
@@ -31,7 +31,7 @@ const data = [
         nombre: "Animales domésticos y salvajes",
         descripcion: "20 flash cards 14cm x 10cm",
         precio: 26000,
-        imagen: "/productimages/4.png",
+        imagen: "/images/4.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -40,7 +40,7 @@ const data = [
         nombre: "Animales acuáticos",
         descripcion: "20 flash cards 14cm x 10cm",
         precio: 26000,
-        imagen: "/productimages/5.png",
+        imagen: "/images/5.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -49,7 +49,7 @@ const data = [
         nombre: "Animales domésticos, salvajes y acuáticos",
         descripcion: "40 flash cards 14cm x 10cm",
         precio: 44000,
-        imagen: "/productimages/6.png",
+        imagen: "/images/6.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -58,7 +58,7 @@ const data = [
         nombre: "Medios de Transporte",
         descripcion: "20 flash cards 14cm x 10cm",
         precio: 26000,
-        imagen: "/productimages/7.png",
+        imagen: "/images/7.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -67,7 +67,7 @@ const data = [
         nombre: "Alimentos",
         descripcion: "20 flash cards 14cm x 10cm",
         precio: 26000,
-        imagen: "/productimages/8.png",
+        imagen: "/images/8.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -76,7 +76,7 @@ const data = [
         nombre: "Profesiones",
         descripcion: "16 flash cards 14cm x 10cm",
         precio: 26000,
-        imagen: "/productimages/9.png",
+        imagen: "/images/9.png",
         meses: 12,
         etiqueta: "+ 1 año"
     },
@@ -85,7 +85,7 @@ const data = [
         nombre: "Combo mediano de lenguaje",
         descripcion: "50 flash cards 9cm x 10cm",
         precio: 38000,
-        imagen: "/productimages/10.png",
+        imagen: "/images/10.png",
         meses: 18,
         etiqueta: "+ 18 meses"
     },
@@ -94,7 +94,7 @@ const data = [
         nombre: "Combo de lenguaje",
         descripcion: "36 flash cards 9cm x 10cm y 36 dichas de nombres",
         precio: 37000,
-        imagen: "/productimages/11.png",
+        imagen: "/images/11.png",
         meses: 18,
         etiqueta: "+ 18 meses"
     },
@@ -103,7 +103,7 @@ const data = [
         nombre: "Crea historias con iman",
         descripcion: "80 fichas 5cm x 5cm",
         precio: 40000,
-        imagen: "/productimages/12.png",
+        imagen: "/images/12.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -112,7 +112,7 @@ const data = [
         nombre: "Loterias con iman - vocales",
         descripcion: "5 tableros con iman",
         precio: 37000,
-        imagen: "/productimages/13.png",
+        imagen: "/images/13.png",
         meses: 36,
         etiqueta: "+ 3 años"
     },
@@ -121,7 +121,7 @@ const data = [
         nombre: "Tablero con iman",
         descripcion: "20 acitividades 8 refuerzo positivo",
         precio: 38000,
-        imagen: "/productimages/14.png",
+        imagen: "/images/14.png",
         meses: 36,
         etiqueta: "+ 3 años"
     },
@@ -130,7 +130,7 @@ const data = [
         nombre: "Loterias con iman",
         descripcion: "6 tableros",
         precio: 38000,
-        imagen: "/productimages/15.png",
+        imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -139,7 +139,7 @@ const data = [
         nombre: "Loterias con iman",
         descripcion: "12 tableros",
         precio: 62000,
-        imagen: "/productimages/15.png",
+        imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -148,7 +148,7 @@ const data = [
         nombre: "Opuestos",
         descripcion: "20 flash cards 14cm x 10cm",
         precio: 24000,
-        imagen: "/productimages/16.png",
+        imagen: "/images/16.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -157,7 +157,7 @@ const data = [
         nombre: "Partes del cuerpo y emociones",
         descripcion: "8 flash cards 14cm x 10cm, 9 fichas 9cm x 10cm y 10 fichas 5cm x 5cm",
         precio: 22000,
-        imagen: "/productimages/17.png",
+        imagen: "/images/17.png",
         meses: 18,
         etiqueta: "+ 18 meses"
     },
@@ -166,7 +166,7 @@ const data = [
         nombre: "Colores",
         descripcion: "10 flash cards 14cm x 10cm, 40 fichas 3cm x 3cm",
         precio: 22000,
-        imagen: "/productimages/18.png",
+        imagen: "/images/18.png",
         meses: 18,
         etiqueta: "+ 18 meses"
     },
@@ -175,7 +175,7 @@ const data = [
         nombre: "Domino didactico",
         descripcion: "Fichas en cartón c/u",
         precio: 28000,
-        imagen: "/productimages/20.png",
+        imagen: "/images/20.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -184,7 +184,7 @@ const data = [
         nombre: "Percepción visual",
         descripcion: "8 flash cards 14cm x 10cm + palitos de madera",
         precio: 20000,
-        imagen: "/productimages/21.png",
+        imagen: "/images/21.png",
         meses: 36,
         etiqueta: "+ 3 años"
     },
@@ -193,7 +193,7 @@ const data = [
         nombre: "Percepción visual",
         descripcion: "8 flash cards 14cm x 10cm + cubos de madera",
         precio: 26000,
-        imagen: "/productimages/22.png",
+        imagen: "/images/22.png",
         meses: 48,
         etiqueta: "+ 4 años"
     },
@@ -202,7 +202,7 @@ const data = [
         nombre: "Figuas geometricas",
         descripcion: "21 flash cards 9cm x 10cm",
         precio: 22000,
-        imagen: "/productimages/23.png",
+        imagen: "/images/23.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -211,7 +211,7 @@ const data = [
         nombre: "Vocales",
         descripcion: "10 flash cards 14cm x 10cm + 30 fichas 5cm x 5cm",
         precio: 25000,
-        imagen: "/productimages/24.png",
+        imagen: "/images/24.png",
         meses: 36,
         etiqueta: "+ 3 años"
     },
@@ -220,7 +220,7 @@ const data = [
         nombre: "Abecedario - Imprenta",
         descripcion: "33 flash cards 14cm x 10cm + letras sueltas para armar cada palabra",
         precio: 38000,
-        imagen: "/productimages/25.png",
+        imagen: "/images/25.png",
         meses: 48,
         etiqueta: "+ 4 años"
     },
@@ -229,7 +229,7 @@ const data = [
         nombre: "Abecedario - Cursiva",
         descripcion: "31 flash cards 14cm x 10cm",
         precio: 38000,
-        imagen: "/productimages/26.png",
+        imagen: "/images/26.png",
         meses: 48,
         etiqueta: "+ 4 años"
     },
@@ -238,7 +238,7 @@ const data = [
         nombre: "Silabario + trabadas e inversas",
         descripcion: "55 flash cards 9cm x 10cm",
         precio: 38000,
-        imagen: "/productimages/27.png",
+        imagen: "/images/27.png",
         meses: 60,
         etiqueta: "+ 5 años"
     },
@@ -247,7 +247,7 @@ const data = [
         nombre: "Silabario",
         descripcion: "160 fichas 5cm x 5cm",
         precio: 34000,
-        imagen: "/productimages/28.png",
+        imagen: "/images/28.png",
         meses: 60,
         etiqueta: "+ 5 años"
     },
@@ -256,7 +256,7 @@ const data = [
         nombre: "Reconocimiento de fonemas",
         descripcion: "22 flash cards 14cm x 10cm",
         precio: 24000,
-        imagen: "/productimages/29.png",
+        imagen: "/images/29.png",
         meses: 60,
         etiqueta: "+ 5 años"
     },
@@ -265,7 +265,7 @@ const data = [
         nombre: "Lectura - Pictogramas",
         descripcion: "120 fichas 5cm x 5cm",
         precio: 24000,
-        imagen: "/productimages/30.png",
+        imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años"
     },
@@ -274,7 +274,7 @@ const data = [
         nombre: "Lectura - Pictogramas",
         descripcion: "240 fichas 5cm x 5cm",
         precio: 44000,
-        imagen: "/productimages/30.png",
+        imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años"
     },
@@ -283,7 +283,7 @@ const data = [
         nombre: "Números",
         descripcion: "12 flash cards 14cm x 10cm",
         precio: 22000,
-        imagen: "/productimages/31.png",
+        imagen: "/images/31.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
@@ -292,7 +292,7 @@ const data = [
         nombre: "Cantidades",
         descripcion: "10 flash cards 14cm x 10cm",
         precio: 18000,
-        imagen: "/productimages/32.png",
+        imagen: "/images/32.png",
         meses: 24,
         etiqueta: "+ 2 años"
     },
