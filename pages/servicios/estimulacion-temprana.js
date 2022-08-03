@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonContacto from '../../components/ButtonContacto'
 import Layout from '../../components/Layout'
 
 const EstimulacionTemprana = () => {
@@ -24,6 +25,7 @@ const EstimulacionTemprana = () => {
                     - Apoya a las familias durante los primeros años críticos, ya que los padres son parte de la Intervenciónco, la integración, el pensamiento abstracto dentro de los marcadores de desarrollo.<br/>
                     </p>
                 </section>
+                <ButtonContacto />
             </div>
         </main>
     </Layout>

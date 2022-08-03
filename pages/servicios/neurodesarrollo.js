@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonContacto from '../../components/ButtonContacto'
 import Layout from '../../components/Layout'
 
 const NeuroDesarrollo = () => {
@@ -25,6 +26,7 @@ const NeuroDesarrollo = () => {
                     -Evitar la aparición de un patrón de movimiento no deseado, promoviendo patrones de movimiento adecuados y funcionales.<br/>
                     </p>
                 </section>
+                <ButtonContacto />
             </div>
         </main>
     </Layout>

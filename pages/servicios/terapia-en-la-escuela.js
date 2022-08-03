@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonContacto from '../../components/ButtonContacto'
 import Layout from '../../components/Layout'
 
 const TerapiaEnLaEscuela = () => {
@@ -24,6 +25,7 @@ const TerapiaEnLaEscuela = () => {
                     - Prevenir la aparición de nuevas dificultades y falta de participación.<br/><br/>
                     </p>
                 </section>
+                <ButtonContacto />
             </div>
         </main>
     </Layout>

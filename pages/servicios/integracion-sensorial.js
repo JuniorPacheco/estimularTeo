@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonContacto from '../../components/ButtonContacto'
 import Layout from '../../components/Layout'
 
 const IntegracionSensorial = () => {
@@ -29,6 +30,7 @@ const IntegracionSensorial = () => {
                     - Incomodidad ante texturas de materiales escolares, colbón, tempera, plastilina, entre otros.<br/> 
                     </p>
                 </section>
+                <ButtonContacto />
             </div>
         </main>
     </Layout>

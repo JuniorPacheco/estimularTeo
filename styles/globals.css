@@ -599,7 +599,7 @@ footer img {
 .bannerGreen p,
 .bannerGreen i {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .bannerGreen i {
@@ -607,7 +607,8 @@ footer img {
 }
 
 .bannerGreen h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -619,4 +620,118 @@ footer img {
     .bannerGreen i {
       font-size: 2rem;
     }
+}
+
+/* Contacto seccion */
+
+.contacto {
+  min-height: calc(100vh - 200px);
+}
+
+.contacto__container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .contacto__container {
+      font-size: 1rem;
+    }
+}
+
+.contacto__container > i {
+  font-size: 5rem;
+  transition: transform 0.3s ease-in-out;
+  color: rgb(26, 194, 26);
+  cursor: pointer;
+}
+
+.contacto__container > i:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contacto__form label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.contacto__form label:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.contacto__form button {
+  border: none;
+  background-color: rgb(51, 214, 51);
+  color: white;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.contacto__form button:hover {
+  background-color: rgb(46, 192, 46);
+  transform: scale(1.05, 1.05);
+}
+
+.contacto__form button i {
+  position: relative;
+  top: 2px;
+  margin-left: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.contacto__form label input,
+.contacto__form textarea {
+  font-family: var(--grandstander);
+  width: min(400px, calc(100% - 2rem));
+  padding: 0.4rem 0.5rem;
+  resize: none;
+  outline: none;
+  border: 2px solid var(--azul);
+  border-radius: 4px;
+  background-color: var(--azul);
+  color: white;
+}
+
+.contacto__form label input::placeholder,
+.contacto__form textarea::placeholder {
+  color: white;
+}
+
+.contacto__form label input:focus,
+.contacto__form textarea:focus {
+  outline: none;
+  border: 2px solid var(--azul);
+  box-shadow: 1px 1px 8px var(--azul);
+}
+
+/* Button contacto */
+
+.button__contacto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__Contacto {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--azul);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.button__Contacto:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #0779c5;
+
 }

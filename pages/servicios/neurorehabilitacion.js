@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonContacto from '../../components/ButtonContacto'
 import Layout from '../../components/Layout'
 
 const Neurorehabilitacion = () => {
@@ -24,6 +25,7 @@ const Neurorehabilitacion = () => {
                     -Escuchar, informar y asesorar a la familia del estado general del familiar, de pautas de manejo ante determinadas circunstancias y de los productos de apoyo y de las adaptaciones necesarias, haciéndoles partícipes del proceso de tratamiento.<br/>
                     </p>
                 </section>
+                <ButtonContacto />
             </div>
         </main>
     </Layout>
