@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 const Servicios = () => {
   return (
     <Layout
-        pagina={"servicios"}
+        pagina={"Servicios"}
     >
         <main className='servicios'>
             <div className='servicios__container'>

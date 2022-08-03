@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
       <Layout
-        pagina="inicio"
+        pagina="Inicio"
       >
         <section className='inicio'>
           <div className='inicio__imagen--container maxWidth'>
@@ -30,10 +30,19 @@ export default function Home() {
               <h1>Andrea Bohorquez Navarro</h1>
             </section>
           </div>
+            <section className='bannerGreen'>
+              <h2>También disponemos de materiales didácticos</h2>
+              <h2>Por edades</h2>
+              <i className='bx bxs-chevrons-down' ></i>
+              <i className='bx bxs-chevrons-down' ></i>
+              <i className='bx bxs-chevrons-down' ></i>
+              <Link href={'/material'}>
+                <div className='inicio__imagenMateriales'>
+                  <img src="/imageMateriales.png" alt="imagen de nuño con juegos didacticos y enlace para ir a materiales" />
+                </div>
+              </Link>
+            </section>
         </section>
-        <main>
-          {/* <Image layout="responsive" width={500} height={700} src={"/colors2.jpeg"} alt="Prueba"/> */}
-        </main>
       </Layout>
   )
 }
