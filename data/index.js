@@ -6,7 +6,8 @@ const data = [
         precio: 20000,
         imagen: "/images/1.png",
         meses: 6,
-        etiqueta: "+ 6 meses"
+        etiqueta: "+ 6 meses",
+        tipo: "normal"
     },
     {   
         id:2,
@@ -15,7 +16,8 @@ const data = [
         precio: 20000,
         imagen: "/images/2.png",
         meses: 6,
-        etiqueta: "+ 6 meses"
+        etiqueta: "+ 6 meses",
+        tipo: "normal"
     },
     {   
         id:3,
@@ -24,7 +26,8 @@ const data = [
         precio: 20000,
         imagen: "/images/3.png",
         meses: 6,
-        etiqueta: "+ 6 meses"
+        etiqueta: "+ 6 meses",
+        tipo: "normal"
     },
     {   
         id:4,
@@ -33,7 +36,8 @@ const data = [
         precio: 26000,
         imagen: "/images/4.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "combo"
     },
     {   
         id:5,
@@ -42,7 +46,8 @@ const data = [
         precio: 26000,
         imagen: "/images/5.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "normal"
     },
     {   
         id:6,
@@ -51,7 +56,8 @@ const data = [
         precio: 44000,
         imagen: "/images/6.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "combo"
     },
     {   
         id:7,
@@ -60,7 +66,8 @@ const data = [
         precio: 26000,
         imagen: "/images/7.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "normal"
     },
     {   
         id:8,
@@ -69,7 +76,8 @@ const data = [
         precio: 26000,
         imagen: "/images/8.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "normal"
     },
     {   
         id:9,
@@ -78,7 +86,8 @@ const data = [
         precio: 26000,
         imagen: "/images/9.png",
         meses: 12,
-        etiqueta: "+ 1 año"
+        etiqueta: "+ 1 año",
+        tipo: "normal"
     },
     {   
         id:10,
@@ -87,7 +96,8 @@ const data = [
         precio: 38000,
         imagen: "/images/10.png",
         meses: 18,
-        etiqueta: "+ 18 meses"
+        etiqueta: "+ 18 meses",
+        tipo: "combo"
     },
     {   
         id:11,
@@ -96,7 +106,8 @@ const data = [
         precio: 37000,
         imagen: "/images/11.png",
         meses: 18,
-        etiqueta: "+ 18 meses"
+        etiqueta: "+ 18 meses",
+        tipo: "combo"
     },
     {   
         id:12,
@@ -105,7 +116,8 @@ const data = [
         precio: 40000,
         imagen: "/images/12.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:13,
@@ -114,7 +126,8 @@ const data = [
         precio: 37000,
         imagen: "/images/13.png",
         meses: 36,
-        etiqueta: "+ 3 años"
+        etiqueta: "+ 3 años",
+        tipo: "normal"
     },
     {   
         id:14,
@@ -123,7 +136,8 @@ const data = [
         precio: 38000,
         imagen: "/images/14.png",
         meses: 36,
-        etiqueta: "+ 3 años"
+        etiqueta: "+ 3 años",
+        tipo: "normal"
     },
     {   
         id:15,
@@ -132,7 +146,8 @@ const data = [
         precio: 38000,
         imagen: "/images/15.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:19,
@@ -141,7 +156,8 @@ const data = [
         precio: 62000,
         imagen: "/images/15.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:16,
@@ -150,7 +166,8 @@ const data = [
         precio: 24000,
         imagen: "/images/16.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:17,
@@ -159,7 +176,8 @@ const data = [
         precio: 22000,
         imagen: "/images/17.png",
         meses: 18,
-        etiqueta: "+ 18 meses"
+        etiqueta: "+ 18 meses",
+        tipo: "combo"
     },
     {   
         id:18,
@@ -168,7 +186,8 @@ const data = [
         precio: 22000,
         imagen: "/images/18.png",
         meses: 18,
-        etiqueta: "+ 18 meses"
+        etiqueta: "+ 18 meses",
+        tipo: "normal"
     },
     {   
         id:20,
@@ -177,7 +196,8 @@ const data = [
         precio: 28000,
         imagen: "/images/20.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:21,
@@ -186,7 +206,8 @@ const data = [
         precio: 20000,
         imagen: "/images/21.png",
         meses: 36,
-        etiqueta: "+ 3 años"
+        etiqueta: "+ 3 años",
+        tipo: "normal"
     },
     {   
         id:22,
@@ -195,7 +216,8 @@ const data = [
         precio: 26000,
         imagen: "/images/22.png",
         meses: 48,
-        etiqueta: "+ 4 años"
+        etiqueta: "+ 4 años",
+        tipo: "normal"
     },
     {   
         id:23,
@@ -204,7 +226,8 @@ const data = [
         precio: 22000,
         imagen: "/images/23.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:24,
@@ -213,7 +236,8 @@ const data = [
         precio: 25000,
         imagen: "/images/24.png",
         meses: 36,
-        etiqueta: "+ 3 años"
+        etiqueta: "+ 3 años",
+        tipo: "normal"
     },
     {   
         id:25,
@@ -222,7 +246,8 @@ const data = [
         precio: 38000,
         imagen: "/images/25.png",
         meses: 48,
-        etiqueta: "+ 4 años"
+        etiqueta: "+ 4 años",
+        tipo: "combo"
     },
     {   
         id:26,
@@ -231,7 +256,8 @@ const data = [
         precio: 38000,
         imagen: "/images/26.png",
         meses: 48,
-        etiqueta: "+ 4 años"
+        etiqueta: "+ 4 años",
+        tipo: "normal"
     },
     {   
         id:27,
@@ -240,7 +266,8 @@ const data = [
         precio: 38000,
         imagen: "/images/27.png",
         meses: 60,
-        etiqueta: "+ 5 años"
+        etiqueta: "+ 5 años",
+        tipo: "normal"
     },
     {   
         id:28,
@@ -249,7 +276,8 @@ const data = [
         precio: 34000,
         imagen: "/images/28.png",
         meses: 60,
-        etiqueta: "+ 5 años"
+        etiqueta: "+ 5 años",
+        tipo: "normal"
     },
     {   
         id:29,
@@ -258,7 +286,8 @@ const data = [
         precio: 24000,
         imagen: "/images/29.png",
         meses: 60,
-        etiqueta: "+ 5 años"
+        etiqueta: "+ 5 años",
+        tipo: "normal"
     },
     {   
         id:30,
@@ -267,7 +296,8 @@ const data = [
         precio: 24000,
         imagen: "/images/30.png",
         meses: 60,
-        etiqueta: "+ 5 años"
+        etiqueta: "+ 5 años",
+        tipo: "normal"
     },
     {   
         id:35,
@@ -276,7 +306,8 @@ const data = [
         precio: 44000,
         imagen: "/images/30.png",
         meses: 60,
-        etiqueta: "+ 5 años"
+        etiqueta: "+ 5 años",
+        tipo: "normal"
     },
     {   
         id:31,
@@ -285,7 +316,8 @@ const data = [
         precio: 22000,
         imagen: "/images/31.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:32,
@@ -294,7 +326,8 @@ const data = [
         precio: 18000,
         imagen: "/images/32.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "normal"
     },
     {   
         id:33,
@@ -303,7 +336,8 @@ const data = [
         precio: 32000,
         imagen: "/images/33.png",
         meses: 24,
-        etiqueta: "+ 2 años"
+        etiqueta: "+ 2 años",
+        tipo: "combo"
     },
 ]
 

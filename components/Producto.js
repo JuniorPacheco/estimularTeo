@@ -1,7 +1,8 @@
 import React from 'react'
+import { formatearCantidad } from '../helpers'
 
 const Producto = ({productData}) => {
-    const {id, nombre, descripcion, precio, imagen, etiqueta} = productData
+    const {id, nombre, descripcion, precio, imagen, etiqueta, tipo} = productData
   return (
     <article className='productos__entrada'>
         <div className='productos__entrada-imagen'>
@@ -9,10 +10,17 @@ const Producto = ({productData}) => {
         </div>
         <h4 className='productos__entrada-nombre'>{nombre}</h4>
         <p className='productos__entrada-descripcion'>{descripcion}</p>
-        <p className='productos__entrada-descripcion'>{precio}</p>
+        <p className='productos__entrada-descripcion'>{formatearCantidad(precio)}</p>
         <div className='productos__entrada-edad'>
             <p>{etiqueta}</p>
         </div>
+        {
+          tipo === "combo" && (
+            <div className='productos__entrada-tipo'>
+                <p>{tipo}</p>
+            </div>
+          )
+        }
     </article>
   )
 }
