@@ -141,7 +141,6 @@ img {
 
 .inicio {
   background-color: var(--blanco);
-  margin-top: 80px;
 }
 
 .inicio h2 {
@@ -153,31 +152,74 @@ img {
 }
 
 .inicio__imagen {
-  clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 30%);
+  max-width: 100%;
+  display: block;
+  position: relative;
+  top: 80px;
 }
 
 .inicio__profesion {
   position: relative;
-  background-color: var(--azulClaro);
   border-radius: 10px;
   padding: 1rem;
   margin: 2rem 2rem;
   text-align: center;
   font-weight: bold;
+  font-size: 1rem;
+  height: 200px;
+  top: -50px;
 }
 
 .inicio__profesion p:last-of-type {
   font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
+    .inicio__profesion {
+      font-size: 1.2rem;
+    }
+
+    .inicio__profesion p:last-of-type {
+      font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 650px) {
+  .inicio__profesion {
+    font-size: 1.4rem;
+  }
+
+  .inicio__profesion p:last-of-type {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .inicio__profesion {
+    font-size: 1.7rem;
+  }
+
+  .inicio__profesion p:last-of-type {
+    font-size: 1.6rem;
+  }
+
+  .inicio__profesion {
+    top: -70px;
+  }
+}
+
+@media (min-width: 1040px) {
   .inicio__profesion {
     font-size: 2rem;
   }
 
   .inicio__profesion p:last-of-type {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+  }
+
+  .inicio__profesion {
+    top: -100px;
   }
 }
 
@@ -230,26 +272,6 @@ img {
   }
 }
 
-.inicio__imagen--container h1{
-  position: absolute;
-  margin-top: 0.5rem;
-  top: 0;
-  left: 50%;
-  margin: 0;
-  transform: translate(-50%, -100%);
-  padding: 0.2rem;
-  border-radius: 10px;
-  background-color: var(--rosaClaro);
-  font-size: 2rem;
-  color: #000;
-}
-
-@media (min-width: 768px) {
-  .inicio__imagen--container h1 {
-    font-size: 4rem;
-  }
-}
-
 .inicio__textoPrincipal {
   line-height: 1.3rem;
   max-width: 600px;
@@ -274,6 +296,7 @@ img {
   box-shadow: 0;
   transition: box-shadow 0.3s ease-in-out;
   position: relative;
+  display: block;
 }
 
 .inicio__imagenMateriales:hover img {
@@ -636,39 +659,79 @@ footer img {
 /* Banner green */
 
 .bannerGreen {
-  width: 100%;
-  background-image: url("/bannerGreen.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  padding-bottom: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.bannerGreen p,
-.bannerGreen i {
-  margin: 0;
-  font-size: 1.2rem;
+.bannerGreen img {
+  display: block;
 }
 
-.bannerGreen i {
-  animation: flotar 2s linear infinite forwards;
+.bannerGreen__imageProductsSection {
+  position: relative;
 }
 
-.bannerGreen h2 {
-  font-size: 1.2rem;
-  margin: 0;
+.bannerGreen__containerButtons {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(2, 30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
 }
 
-@media (min-width: 768px) {
-    .bannerGreen h2 {
-      font-size: 2rem;
+.bannerGreen__containerButtons button {
+  border: none;
+  background-color: #fccf0a;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  padding: 1rem 0.2rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: var(--grandstander);
+}
+
+.bannerGreen__containerButtons button:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #eec511;
+}
+
+@media (min-width: 400px) {
+    .bannerGreen__containerButtons button {
+      font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .bannerGreen__containerButtons {
+      gap: 3rem;
     }
 
-    .bannerGreen p,
-    .bannerGreen i {
-      font-size: 2rem;
+    .bannerGreen__containerButtons button {
+      font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 600px) {
+  .bannerGreen__containerButtons button {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 800px) {
+    .bannerGreen__containerButtons button {
+      font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .bannerGreen__imageProductsSection {
+      padding: 4rem;
     }
 }
 
@@ -692,14 +755,14 @@ footer img {
     }
 }
 
-.contacto__container > i {
+.contacto__container > a i {
   font-size: 5rem;
   transition: transform 0.3s ease-in-out;
   color: rgb(26, 194, 26);
   cursor: pointer;
 }
 
-.contacto__container > i:hover {
+.contacto__container > a i:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -762,7 +825,7 @@ footer img {
   box-shadow: 1px 1px 8px var(--azul);
 }
 
-/* Button contacto */
+/* Button contacto en servicios */
 
 .button__contacto-container {
   display: flex;

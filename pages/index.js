@@ -10,7 +10,7 @@ export default function Home() {
         <section className='inicio'>
           <div className='inicio__imagen--container maxWidth'>
             <div className='inicio__imagen'>
-              <img src="https://images.unsplash.com/photo-1545803928-04e3f4cdd4ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="imagen personal" />
+              <img src="/imageHeader.png" alt="imagen personal" />
             </div>
             <section className='inicio__profesion'>
               <p>Soy Terapeuta Ocupacional y alcanzar el máximo nivel de autonomía, funcionalidad y 
@@ -27,20 +27,23 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-              <h1>Andrea Bohorquez Navarro</h1>
             </section>
           </div>
             <section className='bannerGreen'>
-              <h2>También disponemos de materiales didácticos</h2>
-              <h2>Por edades</h2>
-              <i className='bx bxs-chevrons-down' ></i>
-              <i className='bx bxs-chevrons-down' ></i>
-              <i className='bx bxs-chevrons-down' ></i>
               <Link href={'/material'}>
-                <div className='inicio__imagenMateriales'>
-                  <img src="/imageMateriales.png" alt="imagen de nuño con juegos didacticos y enlace para ir a materiales" />
-                </div>
+                  <img src="/imageInicio.png" alt="imagen de nuño con juegos didacticos y enlace para ir a materiales" />
               </Link>
+              <div className='bannerGreen__imageProductsSection'>
+                <img src="/imageProductsSection.png" alt="imagen de secciones de los materiales a manejar" />
+                <div className='bannerGreen__containerButtons'>
+                  <button>Lenguaje</button>
+                  <button>Conceptos basicos</button>
+                  <button>Lecto-escritura</button>
+                  <button>Razonmiento matemático</button>
+                  <button>Hábitos y rutinas</button>
+                  <button>Combos</button>
+                </div>
+              </div>
             </section>
         </section>
       </Layout>
