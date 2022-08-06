@@ -34,7 +34,7 @@ export default function Home() {
                   <img src="/imageInicio.png" alt="imagen de nuño con juegos didacticos y enlace para ir a materiales" />
               </Link>
               <div className='bannerGreen__imageProductsSection'>
-                <img src="/images/imageProductsSection.png" alt="imagen de secciones de los materiales a manejar" />
+                <img src="/images/imageproductssection.png" alt="imagen de secciones de los materiales a manejar" />
                 <div className='bannerGreen__containerButtons'>
                   <button>Lenguaje</button>
                   <button>Conceptos basicos</button>
