@@ -15,7 +15,7 @@ const Producto = ({productData}) => {
             <p>{etiqueta}</p>
         </div>
         {
-          tipo === "combo" && (
+          tipo === "combos" && (
             <div className='productos__entrada-tipo'>
                 <p>{tipo}</p>
             </div>

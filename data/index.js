@@ -7,7 +7,7 @@ const data = [
         imagen: "/images/1.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:2,
@@ -17,7 +17,7 @@ const data = [
         imagen: "/images/2.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:3,
@@ -27,7 +27,7 @@ const data = [
         imagen: "/images/3.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:4,
@@ -37,7 +37,7 @@ const data = [
         imagen: "/images/4.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "combo"
+        tipo: "lenguaje"
     },
     {   
         id:5,
@@ -47,7 +47,7 @@ const data = [
         imagen: "/images/5.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:6,
@@ -57,7 +57,7 @@ const data = [
         imagen: "/images/6.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "combo"
+        tipo: "combos"
     },
     {   
         id:7,
@@ -67,7 +67,7 @@ const data = [
         imagen: "/images/7.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:8,
@@ -77,7 +77,7 @@ const data = [
         imagen: "/images/8.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:9,
@@ -87,7 +87,7 @@ const data = [
         imagen: "/images/9.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:10,
@@ -97,7 +97,7 @@ const data = [
         imagen: "/images/10.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "combo"
+        tipo: "combos"
     },
     {   
         id:11,
@@ -107,7 +107,7 @@ const data = [
         imagen: "/images/11.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "combo"
+        tipo: "lenguaje"
     },
     {   
         id:12,
@@ -117,7 +117,7 @@ const data = [
         imagen: "/images/12.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:13,
@@ -127,7 +127,7 @@ const data = [
         imagen: "/images/13.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:14,
@@ -137,7 +137,7 @@ const data = [
         imagen: "/images/14.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "normal"
+        tipo: "habitos_rutinas"
     },
     {   
         id:15,
@@ -147,7 +147,7 @@ const data = [
         imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:19,
@@ -157,7 +157,7 @@ const data = [
         imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:16,
@@ -167,7 +167,7 @@ const data = [
         imagen: "/images/16.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "lenguaje"
     },
     {   
         id:17,
@@ -177,7 +177,7 @@ const data = [
         imagen: "/images/17.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "combo"
+        tipo: "lenguaje"
     },
     {   
         id:18,
@@ -187,7 +187,7 @@ const data = [
         imagen: "/images/18.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "normal"
+        tipo: "conceptos_basicos"
     },
     {   
         id:20,
@@ -197,7 +197,7 @@ const data = [
         imagen: "/images/20.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "conceptos_basicos"
     },
     {   
         id:21,
@@ -207,7 +207,7 @@ const data = [
         imagen: "/images/21.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "normal"
+        tipo: "conceptos_basicos"
     },
     {   
         id:22,
@@ -217,7 +217,7 @@ const data = [
         imagen: "/images/22.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "normal"
+        tipo: "conceptos_basicos"
     },
     {   
         id:23,
@@ -227,7 +227,7 @@ const data = [
         imagen: "/images/23.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "conceptos_basicos"
     },
     {   
         id:24,
@@ -237,7 +237,7 @@ const data = [
         imagen: "/images/24.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:25,
@@ -247,7 +247,7 @@ const data = [
         imagen: "/images/25.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "combo"
+        tipo: "lecto_escritura"
     },
     {   
         id:26,
@@ -257,7 +257,7 @@ const data = [
         imagen: "/images/26.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:27,
@@ -267,7 +267,7 @@ const data = [
         imagen: "/images/27.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:28,
@@ -277,7 +277,7 @@ const data = [
         imagen: "/images/28.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:29,
@@ -287,7 +287,7 @@ const data = [
         imagen: "/images/29.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:30,
@@ -297,7 +297,7 @@ const data = [
         imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:35,
@@ -317,7 +317,7 @@ const data = [
         imagen: "/images/31.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "razonamiento_matematico"
     },
     {   
         id:32,
@@ -327,7 +327,7 @@ const data = [
         imagen: "/images/32.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "normal"
+        tipo: "razonamiento_matematico"
     },
     {   
         id:33,
@@ -337,7 +337,7 @@ const data = [
         imagen: "/images/33.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combo"
+        tipo: "razonamiento_matematico"
     },
 ]
 
