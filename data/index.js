@@ -51,10 +51,10 @@ const data = [
     },
     {   
         id:6,
-        nombre: "Animales domésticos, salvajes y acuáticos",
+        nombre: "ANIMALES - domésticos, salvajes y acuáticos",
         descripcion: "40 flash cards 14cm x 10cm",
         precio: 44000,
-        imagen: "/images/6.png",
+        imagen: "/images/6.png", // y la 4.png
         meses: 12,
         etiqueta: "+ 1 año",
         tipo: "combos"
@@ -134,16 +134,16 @@ const data = [
         nombre: "Tablero con iman",
         descripcion: "20 acitividades 8 refuerzo positivo",
         precio: 38000,
-        imagen: "/images/14.png",
+        imagen: ["/images/14.png", "/images/14_2.png"],
         meses: 36,
         etiqueta: "+ 3 años",
         tipo: "habitos_rutinas"
     },
     {   
         id:15,
-        nombre: "Loterias con iman",
-        descripcion: "6 tableros",
-        precio: 38000,
+        nombre: "LOTERIAS CON IMAN",
+        descripcion: "Tablas de multiplicar",
+        precio: 62000,
         imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años",
@@ -151,13 +151,23 @@ const data = [
     },
     {   
         id:19,
-        nombre: "Loterias con iman",
-        descripcion: "12 tableros",
-        precio: 62000,
-        imagen: "/images/15.png",
+        nombre: "LOTERIAS CON IMAN - fonemas",
+        descripcion: "6 tableros",
+        precio: 38000,
+        imagen: ["/images/19.png", "/images/19_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lecto_escritura"
+    },
+    {   
+        id:44,
+        nombre: "LOTERIAS CON IMAN - fonemas",
+        descripcion: "12 tableros",
+        precio: 62000,
+        imagen: ["/images/44.png", "/images/44_2.png"],
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "lecto_escritura"
     },
     {   
         id:16,
@@ -172,9 +182,9 @@ const data = [
     {   
         id:17,
         nombre: "Partes del cuerpo y emociones",
-        descripcion: "8 flash cards 14cm x 10cm, 9 fichas 9cm x 10cm y 10 fichas 5cm x 5cm",
+        descripcion: "8 flash cards 14cm x 10cm, 12 fichas 9cm x 10cm",
         precio: 22000,
-        imagen: "/images/17.png",
+        imagen: ["/images/17.png", "/images/17_2.png"],
         meses: 18,
         etiqueta: "+ 18 meses",
         tipo: "lenguaje"
@@ -182,8 +192,8 @@ const data = [
     {   
         id:18,
         nombre: "Colores",
-        descripcion: "10 flash cards 14cm x 10cm, 40 fichas 3cm x 3cm",
-        precio: 22000,
+        descripcion: "16 flash cards 14cm x 10cm, 40 fichas 5cm x 5cm",
+        precio: 26000,
         imagen: "/images/18.png",
         meses: 18,
         etiqueta: "+ 18 meses",
@@ -242,7 +252,7 @@ const data = [
     {   
         id:25,
         nombre: "Abecedario - Imprenta",
-        descripcion: "33 flash cards 14cm x 10cm + letras sueltas para armar cada palabra",
+        descripcion: "32 flash cards 14cm x 10cm",
         precio: 38000,
         imagen: "/images/25.png",
         meses: 48,
@@ -261,19 +271,19 @@ const data = [
     },
     {   
         id:27,
-        nombre: "Silabario + trabadas e inversas",
-        descripcion: "55 flash cards 9cm x 10cm",
-        precio: 38000,
-        imagen: "/images/27.png",
+        nombre: "SILABARIO",
+        descripcion: "33 flash cards 9cm x 10cm",
+        precio: 28000,
+        imagen: ["/images/27.png", "/images/27_2.png"],
         meses: 60,
         etiqueta: "+ 5 años",
         tipo: "lecto_escritura"
     },
     {   
         id:28,
-        nombre: "Silabario",
-        descripcion: "160 fichas 5cm x 5cm",
-        precio: 34000,
+        nombre: "SILABARIO TRABADAS E INVERSAS",
+        descripcion: "22 flash cards 9cm x 10cm",
+        precio: 18000,
         imagen: "/images/28.png",
         meses: 60,
         etiqueta: "+ 5 años",
@@ -300,14 +310,14 @@ const data = [
         tipo: "lecto_escritura"
     },
     {   
-        id:35,
+        id:45,
         nombre: "Lectura - Pictogramas",
         descripcion: "240 fichas 5cm x 5cm",
         precio: 44000,
         imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "normal"
+        tipo: "lecto_escritura"
     },
     {   
         id:31,
@@ -334,7 +344,97 @@ const data = [
         nombre: "Combo números",
         descripcion: "22 flash cards 14cm x 10cm",
         precio: 32000,
-        imagen: "/images/33.png",
+        imagen: ["/images/33.png", "/images/33_2.png"], 
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:34,
+        nombre: "Agendas",
+        descripcion: "Agenas terapeuta ocupacional",
+        precio: 20000,
+        imagen: ["/images/34.png", "/images/34_2.png"],
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "lenguaje"
+    },
+    {   
+        id:35,
+        nombre: "Juego de vestir",
+        descripcion: "25 Prendas de vestir niño - niña",
+        precio: 45000,
+        imagen: "/images/35.png",
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "lenguaje"
+    },
+    {   
+        id:36,
+        nombre: "Combo lecto escritura",
+        descripcion: "Abecedario + silabario",
+        precio: 52000,
+        imagen: ["/images/36.png", "/images/36_2.png"],
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:37,
+        nombre: "Combo",
+        descripcion: "Vocales + números",
+        precio: 36000,
+        imagen: "/images/24.png", //y la 31
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:38,
+        nombre: "COMBO LENGUAJE - animales, alimentos, m. de transporte",
+        descripcion: "40 fichas 14cm x 10cm",
+        precio: 45000,
+        imagen: ["/images/38.png", "/images/38.png"],
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:39,
+        nombre: "COMBO LENGUAJE - animales, alimentos, m. de transporte, objetos, profesiones",
+        descripcion: "56 fichas 14cm x 10cm",
+        precio: 62000,
+        imagen: "/images/39.png",
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:40,
+        nombre: "COMBO - animales, m. de transporte, frutas",
+        descripcion: "24 fichas 14cm x 10cm",
+        precio: 47000,
+        imagen: ["/images/40.png", "/images/40_2.png"],
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "combos"
+    },
+    {   
+        id:41,
+        nombre: "CUADRICULA PARA CONTEO",
+        descripcion: "10 Cuadriculas",
+        precio: 24000,
+        imagen: "/images/41.png",
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "razonamiento_matematico"
+    },
+    {   
+        id:42,
+        nombre: "FLASH CARDS",
+        descripcion: "tablas de multiplicar",
+        precio: 20000,
+        imagen: "/images/42.png",
         meses: 24,
         etiqueta: "+ 2 años",
         tipo: "razonamiento_matematico"

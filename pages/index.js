@@ -48,6 +48,9 @@ export default function Home({handleFiltro}) {
                 </div>
               </div>
             </section>
+            <section className='bannerGreen'>
+              <img src="/materialesDescargables.png" alt="imagen materiales descargables" />
+            </section>
         </section>
       </Layout>
   )

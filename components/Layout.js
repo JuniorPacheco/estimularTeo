@@ -1,10 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useRef, useContext } from 'react'
+import { CartContext } from '../context/CartContext'
+import { formatearCantidad } from '../helpers'
+import ProductoCart from './ProductoCart'
 
 const Layout = ({children, pagina}) => {
-  const [cart, setCart] = useState('')
+  const [visibleNavbar, setVisibleNavbar] = useState(false)
   const [visibleCart, setVisibleCart] = useState(false)
+  
+  const { cart, deleteAllProducts } = useContext( CartContext )
+
+  const cartStyle = useRef()
+
+  const handleVisibleNavbar = () => {
+    setVisibleNavbar(!visibleNavbar)
+  }
+
   const handleVisibleCart = () => {
     setVisibleCart(!visibleCart)
   }
@@ -29,7 +41,7 @@ const Layout = ({children, pagina}) => {
                     </div>
                 </div>
                 <div className='header__items'>
-                    <nav className={`navbar ${visibleCart ? "on" : ""}`}>
+                    <nav className={`navbar ${visibleNavbar ? "on" : ""}`}>
                         <Link href={"/"}>
                             <a onClick={handleClickLink}>Inicio</a>
                         </Link>
@@ -43,12 +55,34 @@ const Layout = ({children, pagina}) => {
                             <a onClick={handleClickLink}>Contacto</a>
                         </Link>
                     </nav>
-                    <i className='bx bxs-cart'></i>
-                    <i onClick={handleVisibleCart} className='bx bx-menu'></i>
+                    <i onClick={handleVisibleCart} className='bx bxs-cart'></i>
+                    <i onClick={handleVisibleNavbar} className='bx bx-menu'></i>
                 </div>
             </section>
         </header>
         {children}
+        <section className={`car ${visibleCart ? "active" : ""}`}>
+            <h2>Carrito</h2>
+
+            <section className="car__items">
+                {/* <div className="car__vacio">
+                   <img src="/carVacio.png" alt="Caja vacia"/>
+                   <figcaption>Carrito Vacio</figcaption>
+               </div> */}
+               {
+                cart.map(cartProduct => <ProductoCart key={cartProduct.id} dataProduct={cartProduct}/>)
+               }
+            </section>
+   
+            <button onClick={deleteAllProducts} className="car__buttonDeleteAll"><i className='bx bxs-message-square-x'></i> Vaciar Carrito</button>
+   
+            <div className="car__total">
+               <p>Total: <span>{formatearCantidad(cart.reduce((acc, cur) => acc + cur.precio * cur.cantidad, 0))}</span></p>
+            </div>
+            
+            <button className='car__buttonPayAll'>Hacer pedido <i className='bx bxl-whatsapp'></i></button>
+
+         </section>
         <footer>
             <p>Siguenos en nuestras redes sociales</p>
             <section className='redesSociales'>

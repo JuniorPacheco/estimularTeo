@@ -620,10 +620,49 @@ footer img {
   background-color: var(--verdeClaro);
 }
 
-.productos__entrada 
-
 .productos__entrada img {
   max-width: 100%;
+}
+
+.productos__entrada-imagen {
+  height: 230px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.productos__entrada-imagen.Animacion__imagen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+.productos__entrada-imagen.Animacion__imagen img:first-of-type {
+  opacity: 1;
+} 
+
+.productos__entrada-imagen.Animacion__imagen img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+} 
+
+.productos__entrada:hover .productos__entrada-imagen.Animacion__imagen img:last-of-type {
+  opacity: 1;
+}
+
+.productos_entrada-carrito {
+  border: none;
+  background-color: var(--azul);
+  color: white;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.productos_entrada-carrito:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #0779c5;
 }
 
 .productos__entrada-edad {
@@ -848,4 +887,154 @@ footer img {
   transform: scale(1.05, 1.05);
   background-color: #0779c5;
 
+}
+
+/* Cart styles */
+
+.car {
+  font-weight: bold;
+  height: calc(100vh - 60px);
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid var(--azul);
+  border-left: 2px solid var(--azul);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out opacity, visibility 0.3s ease-in-out;
+  z-index: 1;
+  text-align: center;
+  width: min(350px, 100%);
+  overflow: auto;
+}
+
+.car.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.car > h2 {
+  padding-bottom: 2rem;
+}
+
+.car__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: calc(62vh - 80px);
+  overflow: auto;
+}
+
+.car__vacio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.itemC {
+  display: grid;
+  grid-template-areas: "img info info"
+                     "img  info info"
+                     "img  botones delete";
+  border-bottom: 2px solid var(--azul);
+  border-right: 2px solid var(--azul);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 3fr 4fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.itemC__imagen {
+  grid-area: img;
+}
+
+.itemC__imagen img {
+  border-radius: 4px;
+}
+
+.itemC__info {
+  grid-area: info;
+}
+
+.itemC p,
+.itemC i {
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
+
+.itemC__actions {
+  grid-area: botones;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemC__deleteAll {
+  grid-area: delete;
+}
+
+.itemC__deleteAll i,
+.itemC__btnMas i,
+.itemC__btnMenos i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.itemC .itemC__actions .itemC__cantidad {
+  font-size: 0.9rem;
+}
+
+.car__buttonDeleteAll {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--azul);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.car__buttonDeleteAll:hover {
+  background-color: #0779c5;
+  transform: scale(1.05, 1.05);
+}
+
+.car__total {
+  padding-top: 2rem;
+}
+
+.car__buttonPayAll {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: #15a191;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.car__buttonPayAll:hover {
+  background-color: #168d7f;
+  transform: scale(1.05, 1.05);
+}
+
+.car__buttonPayAll i {
+  font-size: 1.4rem;
+  margin-left: 4px;
 }

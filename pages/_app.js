@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../styles/globals.css'
 import data from '../data'
+import { CartProvider } from '../context/CartContext'
 
 function MyApp({ Component, pageProps }) {
   const [filter, setFilter] = useState('')
@@ -25,12 +26,16 @@ function MyApp({ Component, pageProps }) {
     setDataRender(data)
   }, [])
 
-  return <Component {...pageProps} 
-    filter={filter}
-    setFilter={setFilter}
-    dataRender={dataRender}
-    handleFiltro={handleFiltro}
-  />
+  return (
+    <CartProvider>
+      <Component {...pageProps} 
+        filter={filter}
+        setFilter={setFilter}
+        dataRender={dataRender}
+        handleFiltro={handleFiltro}
+      />
+    </CartProvider>
+  )
 }
 
 export default MyApp
