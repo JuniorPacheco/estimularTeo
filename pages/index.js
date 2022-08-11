@@ -27,8 +27,8 @@ export default function Home({handleFiltro}) {
               <div className='inicio__vermas'>
                 <Link href={"/servicios"}>
                   <div>
-                    <p>Ver más</p>
-                    <i className='bx bx-chevrons-down'></i>
+                    <p><i className='bx bx-chevrons-right'></i>Ver más<i className='bx bx-chevrons-left'></i></p>
+                    
                   </div>
                 </Link>
               </div>
@@ -49,7 +49,9 @@ export default function Home({handleFiltro}) {
               </div>
             </section>
             <section className='bannerGreen'>
-              <img src="/materialesDescargables.png" alt="imagen materiales descargables" />
+              <Link href={"/materialesDescargables"}>
+                <img src="/materialesDescargables.png" alt="imagen materiales descargables" />
+              </Link>
             </section>
         </section>
       </Layout>

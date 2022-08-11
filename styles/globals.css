@@ -236,17 +236,72 @@ img {
 
 .inicio__vermas p {
   margin: 0;
+  border: 2px solid var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.inicio__vermas i {
+.inicio__vermas i:first-of-type {
   font-size: 1.6rem;
   transform: translateY(0);
-  animation: flotar 2s linear infinite forwards;
+  animation: flotarX1 2s linear infinite forwards;
+}
+
+.inicio__vermas i:last-of-type {
+  font-size: 1.6rem;
+  transform: translateY(0);
+  animation: flotarX2 2s linear infinite forwards;
 }
 
 @media (min-width: 768px) {
   .inicio__vermas i {
     font-size: 2rem;
+  }
+}
+
+@keyframes flotarX1 {
+  0% {
+    transform: translateX(3px);
+  }
+
+  25% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-3px);
+  }
+
+  75% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+@keyframes flotarX2 {
+  0% {
+    transform: translateX(-3px);
+  }
+
+  25% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-3px);
   }
 }
 

@@ -54,7 +54,7 @@ const data = [
         nombre: "ANIMALES - domésticos, salvajes y acuáticos",
         descripcion: "40 flash cards 14cm x 10cm",
         precio: 44000,
-        imagen: "/images/6.png", // y la 4.png
+        imagen: ["/images/6.png", "/images/4.png"], // y la 4.png
         meses: 12,
         etiqueta: "+ 1 año",
         tipo: "combos"
@@ -147,7 +147,7 @@ const data = [
         imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "razonamiento_matematico"
     },
     {   
         id:19,
@@ -274,7 +274,7 @@ const data = [
         nombre: "SILABARIO",
         descripcion: "33 flash cards 9cm x 10cm",
         precio: 28000,
-        imagen: ["/images/27.png", "/images/27_2.png"],
+        imagen: "/images/27.png", //["/images/27.png", "/images/27_2.png"]
         meses: 60,
         etiqueta: "+ 5 años",
         tipo: "lecto_escritura"
@@ -384,7 +384,7 @@ const data = [
         nombre: "Combo",
         descripcion: "Vocales + números",
         precio: 36000,
-        imagen: "/images/24.png", //y la 31
+        imagen: ["/images/24.png", "/images/31.png"], //y la 31
         meses: 24,
         etiqueta: "+ 2 años",
         tipo: "combos"
@@ -438,6 +438,26 @@ const data = [
         meses: 24,
         etiqueta: "+ 2 años",
         tipo: "razonamiento_matematico"
+    },
+    {   
+        id:46,
+        nombre: "LOTERIAS CON IMAN",
+        descripcion: "6 tableros",
+        precio: 38000,
+        imagen: "/images/46.png",
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "lenguaje"
+    },
+    {   
+        id:47,
+        nombre: "LIBRO DE NAVIDAD",
+        descripcion: "",
+        precio: 18000,
+        imagen: "/images/47.png",
+        meses: 24,
+        etiqueta: "+ 2 años",
+        tipo: "lenguaje"
     },
 ]
 
