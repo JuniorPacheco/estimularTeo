@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import data from '../data'
 import descargables from "../data/descargables";
 import { formatearCantidad } from "../helpers";
@@ -6,9 +6,9 @@ import { formatearCantidad } from "../helpers";
 export const CartContext = createContext()
 
 function useStickyState(defaultValue, key) {
-    const [value, setValue] = React.useState(defaultValue);
+    const [value, setValue] = useState(defaultValue);
   
-    React.useEffect(() => {
+    useEffect(() => {
       const stickyValue = window.localStorage.getItem(key);
   
       if (stickyValue !== null) {
@@ -16,7 +16,7 @@ function useStickyState(defaultValue, key) {
       }
     }, [key]);
   
-    React.useEffect(() => {
+    useEffect(() => {
       window.localStorage.setItem(key, JSON.stringify(value));
     }, [key, value]);
   
@@ -99,18 +99,6 @@ export const CartProvider = ({children}) => {
         window.open(url);
         setCart([])
     }
-    // useEffect(() => {
-    //     const ISSERVER = typeof window === "undefined";
-
-    //     if (!ISSERVER) {
-    //         setCart(JSON.parse(localStorage.getItem('carritoEstimularTeo')) ?? []);
-    //     }
-    // }, [])
-
-    // useEffect(() => {
-    //     console.log("cambio")
-    //     localStorage.setItem('carritoEstimularTeo', JSON.stringify(cart));
-    // }, [cart])
     return (
         <CartContext.Provider value={{
             cart,
