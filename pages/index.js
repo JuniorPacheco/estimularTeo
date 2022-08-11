@@ -50,7 +50,7 @@ export default function Home({handleFiltro}) {
             </section>
             <section className='bannerGreen'>
               <Link href={"/materialesDescargables"}>
-                <img src="/materialesDescargables.png" alt="imagen materiales descargables" />
+                <img className='imagenDescargables' src="/materialesDescargables.png" alt="imagen materiales descargables" />
               </Link>
             </section>
         </section>

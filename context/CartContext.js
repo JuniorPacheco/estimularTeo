@@ -1,11 +1,30 @@
-import { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import data from '../data'
+import descargables from "../data/descargables";
 import { formatearCantidad } from "../helpers";
 
 export const CartContext = createContext()
 
+function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(defaultValue);
+  
+    React.useEffect(() => {
+      const stickyValue = window.localStorage.getItem(key);
+  
+      if (stickyValue !== null) {
+        setValue(JSON.parse(stickyValue));
+      }
+    }, [key]);
+  
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
+  
+    return [value, setValue];
+  }
+
 export const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useStickyState([], 'carritoEstimularTeo')
 
       const addProductToCart = id => {
         let comprobation = false
@@ -19,7 +38,9 @@ export const CartProvider = ({children}) => {
             }
         })
         if(!comprobation){
-            const productToPush = data.filter(productData => productData.id === id)
+            const totalData = [...data, ...descargables]
+            const productToPush = totalData.filter(productData => productData.id === id)
+            console.log(productToPush)
             productToPush[0].cantidad = 1
             if(typeof productToPush[0].imagen !== "string") {
                 productToPush[0].imagen = productToPush[0].imagen[0]
@@ -70,7 +91,7 @@ export const CartProvider = ({children}) => {
         let textoProductos = "";
         cart.forEach(item => {
             textoProductos += 
-            `=> *${item.nombre}*%0A Cantidad: ${item.cantidad}%0A Precio Unidad: ${formatearCantidad(item.precio)}%0A Sub Total: ${formatearCantidad(item.precio * item.cantidad)}%0A%0A`;
+            `=> *${item.nombre}*%0A Tipo: ${item.entrega}%0A Cantidad: ${item.cantidad}%0A Precio Unidad: ${formatearCantidad(item.precio)}%0A Sub Total: ${formatearCantidad(item.precio * item.cantidad)}%0A%0A`;
         })
         console.log(textoProductos);
         let url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=
@@ -78,6 +99,18 @@ export const CartProvider = ({children}) => {
         window.open(url);
         setCart([])
     }
+    // useEffect(() => {
+    //     const ISSERVER = typeof window === "undefined";
+
+    //     if (!ISSERVER) {
+    //         setCart(JSON.parse(localStorage.getItem('carritoEstimularTeo')) ?? []);
+    //     }
+    // }, [])
+
+    // useEffect(() => {
+    //     console.log("cambio")
+    //     localStorage.setItem('carritoEstimularTeo', JSON.stringify(cart));
+    // }, [cart])
     return (
         <CartContext.Provider value={{
             cart,

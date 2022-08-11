@@ -7,7 +7,8 @@ const data = [
         imagen: "/images/1.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:2,
@@ -17,7 +18,8 @@ const data = [
         imagen: "/images/2.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:3,
@@ -27,7 +29,8 @@ const data = [
         imagen: "/images/3.png",
         meses: 6,
         etiqueta: "+ 6 meses",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:4,
@@ -37,7 +40,8 @@ const data = [
         imagen: "/images/4.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:5,
@@ -47,7 +51,8 @@ const data = [
         imagen: "/images/5.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:6,
@@ -57,7 +62,8 @@ const data = [
         imagen: ["/images/6.png", "/images/4.png"], // y la 4.png
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:7,
@@ -67,7 +73,8 @@ const data = [
         imagen: "/images/7.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:8,
@@ -77,7 +84,8 @@ const data = [
         imagen: "/images/8.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:9,
@@ -87,7 +95,8 @@ const data = [
         imagen: "/images/9.png",
         meses: 12,
         etiqueta: "+ 1 año",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:10,
@@ -97,7 +106,8 @@ const data = [
         imagen: "/images/10.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:11,
@@ -107,7 +117,8 @@ const data = [
         imagen: "/images/11.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:12,
@@ -117,7 +128,8 @@ const data = [
         imagen: "/images/12.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:13,
@@ -127,7 +139,8 @@ const data = [
         imagen: "/images/13.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:14,
@@ -137,7 +150,8 @@ const data = [
         imagen: ["/images/14.png", "/images/14_2.png"],
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "habitos_rutinas"
+        tipo: "habitos_rutinas",
+        entrega: "físico"
     },
     {   
         id:15,
@@ -147,7 +161,8 @@ const data = [
         imagen: "/images/15.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "razonamiento_matematico"
+        tipo: "razonamiento_matematico",
+        entrega: "físico"
     },
     {   
         id:19,
@@ -157,7 +172,8 @@ const data = [
         imagen: ["/images/19.png", "/images/19_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:44,
@@ -167,7 +183,8 @@ const data = [
         imagen: ["/images/44.png", "/images/44_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:16,
@@ -177,7 +194,8 @@ const data = [
         imagen: "/images/16.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:17,
@@ -187,7 +205,8 @@ const data = [
         imagen: ["/images/17.png", "/images/17_2.png"],
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:18,
@@ -197,7 +216,8 @@ const data = [
         imagen: "/images/18.png",
         meses: 18,
         etiqueta: "+ 18 meses",
-        tipo: "conceptos_basicos"
+        tipo: "conceptos_basicos",
+        entrega: "físico"
     },
     {   
         id:20,
@@ -207,7 +227,8 @@ const data = [
         imagen: "/images/20.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "conceptos_basicos"
+        tipo: "conceptos_basicos",
+        entrega: "físico"
     },
     {   
         id:21,
@@ -217,7 +238,8 @@ const data = [
         imagen: "/images/21.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "conceptos_basicos"
+        tipo: "conceptos_basicos",
+        entrega: "físico"
     },
     {   
         id:22,
@@ -227,7 +249,8 @@ const data = [
         imagen: "/images/22.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "conceptos_basicos"
+        tipo: "conceptos_basicos",
+        entrega: "físico"
     },
     {   
         id:23,
@@ -237,7 +260,8 @@ const data = [
         imagen: "/images/23.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "conceptos_basicos"
+        tipo: "conceptos_basicos",
+        entrega: "físico"
     },
     {   
         id:24,
@@ -247,7 +271,8 @@ const data = [
         imagen: "/images/24.png",
         meses: 36,
         etiqueta: "+ 3 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:25,
@@ -257,7 +282,8 @@ const data = [
         imagen: "/images/25.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:26,
@@ -267,7 +293,8 @@ const data = [
         imagen: "/images/26.png",
         meses: 48,
         etiqueta: "+ 4 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:27,
@@ -277,7 +304,8 @@ const data = [
         imagen: "/images/27.png", //["/images/27.png", "/images/27_2.png"]
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:28,
@@ -287,7 +315,8 @@ const data = [
         imagen: "/images/28.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:29,
@@ -297,7 +326,8 @@ const data = [
         imagen: "/images/29.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:30,
@@ -307,7 +337,8 @@ const data = [
         imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:45,
@@ -317,7 +348,8 @@ const data = [
         imagen: "/images/30.png",
         meses: 60,
         etiqueta: "+ 5 años",
-        tipo: "lecto_escritura"
+        tipo: "lecto_escritura",
+        entrega: "físico"
     },
     {   
         id:31,
@@ -327,7 +359,8 @@ const data = [
         imagen: "/images/31.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "razonamiento_matematico"
+        tipo: "razonamiento_matematico",
+        entrega: "físico"
     },
     {   
         id:32,
@@ -337,7 +370,8 @@ const data = [
         imagen: "/images/32.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "razonamiento_matematico"
+        tipo: "razonamiento_matematico",
+        entrega: "físico"
     },
     {   
         id:33,
@@ -347,7 +381,8 @@ const data = [
         imagen: ["/images/33.png", "/images/33_2.png"], 
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:34,
@@ -357,7 +392,8 @@ const data = [
         imagen: ["/images/34.png", "/images/34_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:35,
@@ -367,7 +403,8 @@ const data = [
         imagen: "/images/35.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:36,
@@ -377,7 +414,8 @@ const data = [
         imagen: ["/images/36.png", "/images/36_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:37,
@@ -387,7 +425,8 @@ const data = [
         imagen: ["/images/24.png", "/images/31.png"], //y la 31
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:38,
@@ -397,7 +436,8 @@ const data = [
         imagen: ["/images/38.png", "/images/38.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:39,
@@ -407,7 +447,8 @@ const data = [
         imagen: "/images/39.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:40,
@@ -417,7 +458,8 @@ const data = [
         imagen: ["/images/40.png", "/images/40_2.png"],
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "combos"
+        tipo: "combos",
+        entrega: "físico"
     },
     {   
         id:41,
@@ -427,7 +469,8 @@ const data = [
         imagen: "/images/41.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "razonamiento_matematico"
+        tipo: "razonamiento_matematico",
+        entrega: "físico"
     },
     {   
         id:42,
@@ -437,7 +480,8 @@ const data = [
         imagen: "/images/42.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "razonamiento_matematico"
+        tipo: "razonamiento_matematico",
+        entrega: "físico"
     },
     {   
         id:46,
@@ -447,7 +491,8 @@ const data = [
         imagen: "/images/46.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
     {   
         id:47,
@@ -457,7 +502,8 @@ const data = [
         imagen: "/images/47.png",
         meses: 24,
         etiqueta: "+ 2 años",
-        tipo: "lenguaje"
+        tipo: "lenguaje",
+        entrega: "físico"
     },
 ]
 
