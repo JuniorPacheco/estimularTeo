@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import data from '../data'
+import { formatearCantidad } from "../helpers";
 
 export const CartContext = createContext()
 
@@ -62,6 +63,21 @@ export const CartProvider = ({children}) => {
     const deleteAllProducts = () => {
         setCart([])
     }
+
+    function enviarDatosWhatsApp(){
+        const numeroWhatsApp = "573223909659";
+        const totalCompra = cart.reduce((acc, arr) => acc + arr.cantidad * arr.precio, 0)
+        let textoProductos = "";
+        cart.forEach(item => {
+            textoProductos += 
+            `=> *${item.nombre}*%0A Cantidad: ${item.cantidad}%0A Precio Unidad: ${formatearCantidad(item.precio)}%0A Sub Total: ${formatearCantidad(item.precio * item.cantidad)}%0A%0A`;
+        })
+        console.log(textoProductos);
+        let url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=
+        *_Hola Buenos dias/tardes, me interesan estos productos_*%0A%0A${textoProductos}%0A *_TOTAL_*:${totalCompra}`;
+        window.open(url);
+        setCart([])
+    }
     return (
         <CartContext.Provider value={{
             cart,
@@ -69,7 +85,8 @@ export const CartProvider = ({children}) => {
             deleteProduct,
             plusProduct,
             minusProduct,
-            deleteAllProducts
+            deleteAllProducts,
+            enviarDatosWhatsApp
         }}>
             {children}
         </CartContext.Provider>

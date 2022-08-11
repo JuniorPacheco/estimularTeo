@@ -9,7 +9,7 @@ const Layout = ({children, pagina}) => {
   const [visibleNavbar, setVisibleNavbar] = useState(false)
   const [visibleCart, setVisibleCart] = useState(false)
   
-  const { cart, deleteAllProducts } = useContext( CartContext )
+  const { cart, deleteAllProducts, enviarDatosWhatsApp } = useContext( CartContext )
 
   const cartStyle = useRef()
 
@@ -80,7 +80,7 @@ const Layout = ({children, pagina}) => {
                <p>Total: <span>{formatearCantidad(cart.reduce((acc, cur) => acc + cur.precio * cur.cantidad, 0))}</span></p>
             </div>
             
-            <button className='car__buttonPayAll'>Hacer pedido <i className='bx bxl-whatsapp'></i></button>
+            <button onClick={enviarDatosWhatsApp} className='car__buttonPayAll'>Hacer pedido <i className='bx bxl-whatsapp'></i></button>
 
          </section>
         <footer>
